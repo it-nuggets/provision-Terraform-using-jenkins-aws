@@ -5,12 +5,12 @@ terraform {
         version = "5.27.0"
     }
   }
-  backend "s3" {
-    bucket                  = "terraform-s3-state-in-nuggets"
-    key                     = "my-terraform-project"
-    region                  = "eu-central-1"
-    shared_credentials_file = "~/.aws/credentials"
-  }
+  # backend "s3" {
+  #   bucket                  = "terraform-s3-state-in-nuggets"
+  #   key                     = "my-terraform-project"
+  #   region                  = "eu-central-1"
+  #   shared_credentials_file = "~/.aws/credentials"
+  # }
 }
 
 provider "aws" {
