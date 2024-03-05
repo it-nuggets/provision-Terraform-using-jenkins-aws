@@ -7,7 +7,7 @@ module "ec2_instance" {
   key_name               = "access_ec2"
   monitoring             = true
   vpc_security_group_ids = ["sg-0bab32f98aaed0262"]
-  subnet_id              = "subnet-0fe5991cb792475d8"
+  subnet_id              = "subnet-0df29ef02dc7b6ea1"
   iam_role_name          = "Terraform-aws-s3-project"
 
   tags = {
