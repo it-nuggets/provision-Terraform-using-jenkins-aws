@@ -12,9 +12,6 @@ pipeline{
         stage('Terraform init'){
             steps{
                 sh 'terraform init'
-                sh 'terraform state pull > state.json'
-                sh 'terraform init -reconfigure'
-                sh 'terraform state push state.json'
             }
         }
         stage('Terraform Plan'){
