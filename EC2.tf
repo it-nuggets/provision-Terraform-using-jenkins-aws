@@ -6,8 +6,8 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = "access_ec2"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0b92e77989e00eade"]
-  subnet_id              = "subnet-0015265af23c32538"
+  vpc_security_group_ids = ["subnet-0789d9cf18eeffb5b"]
+  subnet_id              = "subnet-0fe5991cb792475d8"
   iam_role_name          = "Terraform-aws-s3-project"
 
   tags = {
