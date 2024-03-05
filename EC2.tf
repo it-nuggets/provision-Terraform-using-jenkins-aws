@@ -4,7 +4,7 @@ module "ec2_instance" {
   name = "It-nuggetse-ec2"
 
   instance_type          = "t2.micro"
-  key_name               = " access_ec2"
+  key_name               = "access_ec2"
   monitoring             = true
   vpc_security_group_ids = ["sg-0b92e77989e00eade"]
   subnet_id              = "subnet-0015265af23c32538"
