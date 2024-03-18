@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout from GIT'){
             steps{
-                git branch: 'main', credentialsId: 'testpipelne', url: 'https://github.com/it-nuggets/provision-Terraform-using-jenkins-aws.git'
+                git branch: 'main', url: 'https://github.com/it-nuggets/provision-Terraform-using-jenkins-aws.git'
             }
         }
         stage('Terraform init'){
